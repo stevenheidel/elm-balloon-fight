@@ -1,0 +1,16 @@
+"Pit of Success"
+
+Very little to go back and change
+
+-- Function elements in wrong order
+
+update : State -> Input -> State
+-- and then later
+Signal.foldp update state0 input
+
+-- = instead of <- on a record
+type alias Thing = { x : Int }
+{ thing | x = 1 }
+
+-- overriding the `move` method that had already been imported
+-- would be nice to put view in seperate module? or allow imports anywhere in file?
